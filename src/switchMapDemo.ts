@@ -17,6 +17,8 @@ export class SwitchMapRxJsDemo {
             this.handlePushFromSubscription
         );
     }
+    //Of Operator
+    //creates an observable for each item in the collection
     ofOperatorResult = (numberCollection: number[]): Observable<number> => {
         return of(...numberCollection)
     }

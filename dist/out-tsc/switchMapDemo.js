@@ -22,7 +22,9 @@ var SwitchMapRxJsDemo = (function () {
             return rxjs_1.of.apply(void 0, collection);
         };
         this.switchLogicHandler = operators_1.switchMap(this.switchMapHandler);
-        this.handlePushFromSubscription = function (number) { return console.log("Of Operator Result number value of " + number); };
+        this.handlePushFromSubscription = function (number) {
+            console.log("Of Operator Result number value of " + number);
+        };
         var subject = this.ofOperatorResult(arrayOfNumbers);
         subject.pipe(this.switchLogicHandler);
         subject.subscribe(this.handlePushFromSubscription);

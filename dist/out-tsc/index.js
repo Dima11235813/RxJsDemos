@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-exports.switchMapRxJsDemo = void 0;
-var switchMapDemo_1 = require("./switchMapDemo");
-exports.switchMapRxJsDemo = new switchMapDemo_1.SwitchMapRxJsDemo();
+var ofOperator_1 = require("./ofOperator");
+var ofOperatorDemo = new ofOperator_1.OfOperatorDemo();
 //# sourceMappingURL=index.js.map
