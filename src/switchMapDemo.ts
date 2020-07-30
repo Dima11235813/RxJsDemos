@@ -1,6 +1,5 @@
 import { of, Observable, OperatorFunction, SchedulerLike } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-
+import { switchMap } from "rxjs/operators";
 
 export class SwitchMapRxJsDemo {
     constructor(
@@ -32,9 +31,7 @@ export class SwitchMapRxJsDemo {
         return of(...collection)
     }
     switchLogicHandler: OperatorFunction<number, number> = switchMap(this.switchMapHandler)
-    handlePushFromSubscription = (number: number): void => console.log(`Of Operator Result number value of ${number}`)
+    handlePushFromSubscription = (number: number): void => {
+        console.log(`Of Operator Result number value of ${number}`)
+    }
 }
-
-
-//execute the demo
-export const switchMapRxJsDemo = new SwitchMapRxJsDemo()
