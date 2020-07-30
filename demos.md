@@ -24,4 +24,11 @@ This is the basic unit in RxJS, and it relies on Promises for it's existence.
 [Docs](https://rxjs.dev/api/operators/switchMap)
 
 
+## [Catch Error Operator](https://rxjs-dev.firebaseapp.com/api/operators/catchError)
+
+Catches errors on the observable to be handled by returning a new observable or throwing an error.
+
+[## Operators](https://www.learnrxjs.io/learn-rxjs/operators)
+
+An operator returns an Observable, *not a Promise*
 

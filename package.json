@@ -15,8 +15,8 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "start": "npm run build && node -r tsconfig-paths/register dist/out-tsc/index.js",
-    "dev": "nodemon",
+    "start": "npm run build && node -r tsconfig-paths/register ./dist/out-tsc/index.js",
+    "dev": "nodemon ./dist/out-tsc/index.js",
     "build": "rm -rf ./build && npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
